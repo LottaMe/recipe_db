@@ -1,0 +1,15 @@
+<html>
+    <head>
+        {% if title %}
+        <title>{{ title }} - RecipeDB</title>
+        {% else %}
+        <title>Lol hi!</title>
+        {% endif %}
+    </head>
+    <body>
+        <div>RecipeDB: <a href="/index">Home</a></div>
+        <hr>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>
